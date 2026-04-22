@@ -9,6 +9,8 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
 import os
+from aiohttp import web
+import asyncio
 
 load_dotenv()
 
@@ -16,6 +18,9 @@ BOT_TOKEN = os.getenv('BOT_TOKEN')
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
+
+with open('words.json', 'r', encoding='utf-8') as f:
+       WORDS = json.load(f)
 
 user_active_word = {}
 user_progress = {}
@@ -29,7 +34,6 @@ def get_words_to_review(user_id, all_words, learned_words):
     today_days = get_current_days()
     progress = user_progress.get(user_id, {})
     words_to_review = []
-    
     intervals = [0, 1, 3, 7, 14, 30]
     
     for hanzi in learned_words:
@@ -56,9 +60,6 @@ def normalize(text):
        text = text.strip().lower()
        text = text.rstrip(string.punctuation)
        return text
-
-with open('words.json', 'r', encoding='utf-8') as f:
-       WORDS = json.load(f)
 
 @dp.message(Command("start"))
 async def cmd_start(message: types.Message):
@@ -141,7 +142,6 @@ async def show_stats(message: types.Message):
              f"💪 Отлично (5): {level_counts.get(5, 0)}\n\n"
              f"_Чем выше уровень, тем реже слово будет появляться._"
        )
-
       await message.answer(stats_text, parse_mode="Markdown", reply_markup=get_main_keyboard())
 
 @dp.message()
@@ -206,7 +206,17 @@ async def check_answer(message: types.Message):
                      reply_markup=get_main_keyboard()
               )
 
+async def healthcheck(request):
+      return web.Response(text="OK")
+
 async def main():
+        app = web.Application()
+        app.router.add_get('/healthcheck', healthcheck)
+        runner = web.AppRunner(app)
+        await runner.setup()
+        site = web.TCPSite(runner, '0.0.0.0', 10000)
+        await site.start()
+
         print("бот запущен и ждет команд...")
         await dp.start_polling(bot)
 
