@@ -1,0 +1,1006 @@
+{
+  "我": {
+    "pinyin": "wō",
+    "translation": "я"
+  },
+  "你好": {
+    "pinyin": "nǐhǎo",
+    "translation": "привет"
+  },
+  "叫": {
+    "pinyin": "jiào",
+    "translation": "звать, называться"
+  },
+  "是": {
+    "pinyin": "shì",
+    "translation": "быть"
+  },
+  "俄罗斯": {
+    "pinyin": "éluósī",
+    "translation": "Россия, русский"
+  },
+  "人": {
+    "pinyin": "rén",
+    "translation": "человек"
+  },
+  "学生": {
+    "pinyin": "xuéshēng",
+    "translation": "ученик"
+  },
+  "老师": {
+    "pinyin": "lǎoshī",
+    "translation": "учитель"
+  },
+  "对不起": {
+    "pinyin": "duìbuqǐ",
+    "translation": "извините, извиняться"
+  },
+  "没关系": {
+    "pinyin": "méi guānxi",
+    "translation": "ничего страшного"
+  },
+  "谢谢": {
+    "pinyin": "xièxiè",
+    "translation": "спасибо"
+  },
+  "不谢": {
+    "pinyin": "búxiè",
+    "translation": "не за что"
+  },
+  "谢谢你": {
+    "pinyin": "xièxie nǐ",
+    "translation": "спасибо вам"
+  },
+  "不客气": {
+    "pinyin": "bú kèqi",
+    "translation": "пожалуйста, не за что"
+  },
+  "再见": {
+    "pinyin": "zài jiàn",
+    "translation": "пока, до свидания"
+  },
+  "什么": {
+    "pinyin": "shénme",
+    "translation": "что, какой"
+  },
+  "吗": {
+    "pinyin": "ma",
+    "translation": "вопросительная частица"
+  },
+  "名字": {
+    "pinyin": "míngzi",
+    "translation": "имя"
+  },
+  "中国": {
+    "pinyin": "zhōngguó",
+    "translation": "Китай"
+  },
+  "美国": {
+    "pinyin": "měiguó",
+    "translation": "Америка"
+  },
+  "这": {
+    "pinyin": "zhè",
+    "translation": "это, этот"
+  },
+  "书": {
+    "pinyin": "shū",
+    "translation": "книга"
+  },
+  "不": {
+    "pinyin": "bù",
+    "translation": "нет, не"
+  },
+  "你": {
+    "pinyin": "nǐ",
+    "translation": "ты"
+  },
+  "他": {
+    "pinyin": "tā",
+    "translation": "он"
+  },
+  "她": {
+    "pinyin": "tā",
+    "translation": "она"
+  },
+  "医生": {
+    "pinyin": "yīshēng",
+    "translation": "врач"
+  },
+  "谁": {
+    "pinyin": "shéi",
+    "translation": "кто, кого"
+  },
+  "哪": {
+    "pinyin": "nǎ",
+    "translation": "какой"
+  },
+  "的": {
+    "pinyin": "de",
+    "translation": "частица (приналдежность)"
+  },
+  "汉语": {
+    "pinyin": "hànyǔ",
+    "translation": "Китайский язык"
+  },
+  "国": {
+    "pinyin": "guó",
+    "translation": "страна"
+  },
+  "呢": {
+    "pinyin": "ne",
+    "translation": "вопросительная частица"
+  },
+  "同学": {
+    "pinyin": "tóngxué",
+    "translation": "одноклассник"
+  },
+  "朋友": {
+    "pinyin": "péngyou",
+    "translation": "друг"
+  },
+  "本": {
+    "pinyin": "běn",
+    "translation": "счетное слово для книги"
+  },
+  "个": {
+    "pinyin": "gè",
+    "translation": "общее счетное слово"
+  },
+  "家": {
+    "pinyin": "jiā",
+    "translation": "семья, дом"
+  },
+  "有": {
+    "pinyin": "yǒu",
+    "translation": "иметь"
+  },
+  "口": {
+    "pinyin": "kǒu",
+    "translation": "счетное слово для членов семьи"
+  },
+  "奴儿": {
+    "pinyin": "nu'ér",
+    "translation": "дочь"
+  },
+  "几": {
+    "pinyin": "jǐ",
+    "translation": "сколько"
+  },
+  "岁": {
+    "pinyin": "suì",
+    "translation": "год, возраст"
+  },
+  "了": {
+    "pinyin": "le",
+    "translation": "частица"
+  },
+  "今年": {
+    "pinyin": "jīnnián",
+    "translation": "этот год"
+  },
+  "四": {
+    "pinyin": "sì",
+    "translation": "4, четыре"
+  },
+  "多": {
+    "pinyin": "duō",
+    "translation": "много"
+  },
+  "大": {
+    "pinyin": "dà",
+    "translation": "лет, старший"
+  },
+  "想": {
+    "pinyin": "xiǎng",
+    "translation": "хотеть, хотел бы"
+  },
+  "喝": {
+    "pinyin": "hē",
+    "translation": "пить"
+  },
+  "吃": {
+    "pinyin": "chī",
+    "translation": "есть"
+  },
+  "茶": {
+    "pinyin": "chá",
+    "translation": "чай"
+  },
+  "米饭": {
+    "pinyin": "mǐfàn",
+    "translation": "готовый рис"
+  },
+  "下午": {
+    "pinyin": "xiàwǔ",
+    "translation": "днём"
+  },
+  "商店": {
+    "pinyin": "shāngdiàn",
+    "translation": "магазин"
+  },
+  "买": {
+    "pinyin": "mǎi",
+    "translation": "купить, покупать"
+  },
+  "杯子": {
+    "pinyin": "bēizi",
+    "translation": "чашка, стакан, кружка"
+  },
+  "多少": {
+    "pinyin": "duōshao",
+    "translation": "много, насколько"
+  },
+  "钱": {
+    "pinyin": "qián",
+    "translation": "деньги"
+  },
+  "块": {
+    "pinyin": "kuài",
+    "translation": "юань, доллар"
+  },
+  "那": {
+    "pinyin": "nà",
+    "translation": "это, этот, то, тот"
+  },
+  "水": {
+    "pinyin": "shuǐ",
+    "translation": "вода"
+  },
+  "咖啡": {
+    "pinyin": "kāfēi",
+    "translation": "кофе"
+  },
+  "牛奶": {
+    "pinyin": "niú nǎi",
+    "translation": "коровье молоко"
+  },
+  "奶茶": {
+    "pinyin": "nǎichá",
+    "translation": "молочный чай, чай с молоком"
+  },
+  "可乐": {
+    "pinyin": "kělè",
+    "translation": "кола"
+  },
+  "果汁": {
+    "pinyin": "guǒzhī",
+    "translation": "фруктовый сок"
+  },
+  "酒": {
+    "pinyin": "jiǔ",
+    "translation": "алкоголь"
+  },
+  "要": {
+    "pinyin": "yào",
+    "translation": "хотеть"
+  },
+  "饮料": {
+    "pinyin": "yǐnliào",
+    "translation": "напитки, напиток"
+  },
+  "面": {
+    "pinyin": "miàn",
+    "translation": "лапша"
+  },
+  "包子": {
+    "pinyin": "bāozi",
+    "translation": "паровая булочка"
+  },
+  "饺子": {
+    "pinyin": "jiǎozi",
+    "translation": "пельмени"
+  },
+  "面包": {
+    "pinyin": "miànbāo",
+    "translation": "хлеб"
+  },
+  "饼": {
+    "pinyin": "bǐng",
+    "translation": "лепешка, блин"
+  },
+  "肉": {
+    "pinyin": "ròu",
+    "translation": "мясо"
+  },
+  "猪": {
+    "pinyin": "zhū",
+    "translation": "свинья, свинина"
+  },
+  "牛": {
+    "pinyin": "niú",
+    "translation": "корова"
+  },
+  "鸡": {
+    "pinyin": "jī",
+    "translation": "курица"
+  },
+  "鱼": {
+    "pinyin": "yú",
+    "translation": "рыба"
+  },
+  "蛋": {
+    "pinyin": "dàn",
+    "translation": "яйцо"
+  },
+  "菜": {
+    "pinyin": "cài",
+    "translation": "блюдо, овощи"
+  },
+  "零": {
+    "pinyin": "líng",
+    "translation": "0, ноль"
+  },
+  "一": {
+    "pinyin": "yī",
+    "translation": "1, один"
+  },
+  "二": {
+    "pinyin": "èr",
+    "translation": "2, два"
+  },
+  "两": {
+    "pinyin": "liǎng",
+    "translation": "2, два, количество"
+  },
+  "三": {
+    "pinyin": "sān",
+    "translation": "3, три"
+  },
+  "五": {
+    "pinyin": "wǔ",
+    "translation": "5, пять"
+  },
+  "六": {
+    "pinyin": "liù",
+    "translation": "6, шесть"
+  },
+  "七": {
+    "pinyin": "qī",
+    "translation": "7, семь"
+  },
+  "八": {
+    "pinyin": "bā",
+    "translation": "8, восемь"
+  },
+  "九": {
+    "pinyin": "jiǔ",
+    "translation": "9, девять"
+  },
+  "十": {
+    "pinyin": "shí",
+    "translation": "10, десять"
+  },
+  "多少钱": {
+    "pinyin": "duōshǎoqián",
+    "translation": "сколько стоит?"
+  },
+  "们": {
+    "pinyin": "men",
+    "translation": "суффикс множественного числа для местоимений"
+  },
+  "会": {
+    "pinyin": "huì",
+    "translation": "уметь, мочь"
+  },
+  "说": {
+    "pinyin": "shuō",
+    "translation": "говорить"
+  },
+  "妈妈": {
+    "pinyin": "māma",
+    "translation": "мама"
+  },
+  "爸爸": {
+    "pinyin": "bàba",
+    "translation": "папа"
+  },
+  "弟弟": {
+    "pinyin": "dìdi",
+    "translation": "младший брат"
+  },
+  "妹妹": {
+    "pinyin": "mèimei",
+    "translation": "младшая сестра"
+  },
+  "父母": {
+    "pinyin": "fùmǔ",
+    "translation": "родители"
+  },
+  "儿子": {
+    "pinyin": "érzi",
+    "translation": "сын"
+  },
+  "孩子": {
+    "pinyin": "háizi",
+    "translation": "ребенок"
+  },
+  "兄弟姐妹": {
+    "pinyin": "xiōngdì jiěmèi",
+    "translation": "братья и сестры"
+  },
+  "哥哥": {
+    "pinyin": "gēge",
+    "translation": "старший брат"
+  },
+  "姐姐": {
+    "pinyin": "jiějie",
+    "translation": "старшая сестра"
+  },
+  "爱人": {
+    "pinyin": "àirén",
+    "translation": "супруг, супруга"
+  },
+  "老板": {
+    "pinyin": "lǎobǎn",
+    "translation": "босс, начальник"
+  },
+  "同事": {
+    "pinyin": "tóngshì",
+    "translation": "коллега"
+  },
+  "元": {
+    "pinyin": "yuán",
+    "translation": "юань"
+  },
+  "毛": {
+    "pinyin": "máo",
+    "translation": "цзяо (неформально)"
+  },
+  "角": {
+    "pinyin": "jiǎo",
+    "translation": "цзяо (формально)"
+  },
+  "分": {
+    "pinyin": "fēn",
+    "translation": "минута"
+  },
+  "太": {
+    "pinyin": "tài",
+    "translation": "слишком"
+  },
+  "贵": {
+    "pinyin": "guì",
+    "translation": "дорогой"
+  },
+  "双": {
+    "pinyin": "shuāng",
+    "translation": "счетное слово для парных вещей"
+  },
+  "杯": {
+    "pinyin": "bēi",
+    "translation": "счетное слово для кружек, стаканов"
+  },
+  "也": {
+    "pinyin": "yě",
+    "translation": "тоже, также"
+  },
+  "很": {
+    "pinyin": "hěn",
+    "translation": "очень"
+  },
+  "忙": {
+    "pinyin": "máng",
+    "translation": "занятый"
+  },
+  "喜欢": {
+    "pinyin": "xǐhuan",
+    "translation": "нравиться, любить"
+  },
+  "高兴": {
+    "pinyin": "gāoxìng",
+    "translation": "радостный, радоваться"
+  },
+  "好吃": {
+    "pinyin": "hǎochī",
+    "translation": "вкусно"
+  },
+  "和": {
+    "pinyin": "и",
+    "translation": "hé"
+  },
+  "水果": {
+    "pinyin": "shuǐguǒ",
+    "translation": "фрукт"
+  },
+  "吃饭": {
+    "pinyin": "chīfàn",
+    "translation": "принимать пищу"
+  },
+  "请问": {
+    "pinyin": "qǐngwèn",
+    "translation": "извините, позвольте спросить"
+  },
+  "百": {
+    "pinyin": "bǎi",
+    "translation": "100, сто"
+  },
+  "千": {
+    "pinyin": "qiān",
+    "translation": "1 000, тысяча"
+  },
+  "万": {
+    "pinyin": "wàn",
+    "translation": "10 000, десять тысяч"
+  },
+  "苹果": {
+    "pinyin": "píngguǒ",
+    "translation": "яблоко"
+  },
+  "斤": {
+    "pinyin": "jīn",
+    "translation": "цзинь, единица веса 1,5 кг"
+  },
+  "小": {
+    "pinyin": "xiǎo",
+    "translation": "маленький"
+  },
+  "便宜": {
+    "pinyin": "piányi",
+    "translation": "дешёвый"
+  },
+  "一点": {
+    "pinyin": "yīdiǎn",
+    "translation": "немного, чуть-чуть"
+  },
+  "好吧": {
+    "pinyin": "hǎo ba",
+    "translation": "хорошо!"
+  },
+  "甜": {
+    "pinyin": "tián",
+    "translation": "сладкий"
+  },
+  "现在": {
+    "pinyin": "xiànzài",
+    "translation": "сейчас"
+  },
+  "今天": {
+    "pinyin": "jīntiān",
+    "translation": "сегодня"
+  },
+  "明天": {
+    "pinyin": "míngtiān",
+    "translation": "завтра"
+  },
+  "昨天": {
+    "pinyin": "zuótiān",
+    "translation": "вчера"
+  },
+  "点": {
+    "pinyin": "diǎn",
+    "translation": "час"
+  },
+  "分钟": {
+    "pinyin": "fēnzhōng",
+    "translation": "минута"
+  },
+  "在": {
+    "pinyin": "zài",
+    "translation": "находиться в, на"
+  },
+  "学校": {
+    "pinyin": "xuéxiào",
+    "translation": "школа, учебное заведение"
+  },
+  "上海": {
+    "pinyin": "Shànghǎi",
+    "translation": "Шанхай"
+  },
+  "咖啡馆": {
+    "pinyin": "kāfēiguǎn",
+    "translation": "кафе, кофейня"
+  },
+  "公司": {
+    "pinyin": "gōngsī",
+    "translation": "фирма, компания"
+  },
+  "东西": {
+    "pinyin": "dōngxi",
+    "translation": "вещь, предмет"
+  },
+  "工作": {
+    "pinyin": "gōngzuò",
+    "translation": "работа, работать"
+  },
+  "但是": {
+    "pinyin": "dànshì",
+    "translation": "но"
+  },
+  "时候": {
+    "pinyin": "shíhou",
+    "translation": "время"
+  },
+  "什么时候": {
+    "pinyin": "shénme shíhou",
+    "translation": "Когда? Во сколько?"
+  },
+  "英文": {
+    "pinyin": "yīngwén",
+    "translation": "Английский язык"
+  },
+  "早上": {
+    "pinyin": "zǎoshang",
+    "translation": "утро"
+  },
+  "读": {
+    "pinyin": "dú",
+    "translation": "читать"
+  },
+  "电影": {
+    "pinyin": "diànyǐng",
+    "translation": "фильм, кино"
+  },
+  "看": {
+    "pinyin": "kàn",
+    "translation": "смотреть, читать"
+  },
+  "出租车": {
+    "pinyin": "chūzūchē",
+    "translation": "такси"
+  },
+  "坐": {
+    "pinyin": "zuò",
+    "translation": "сидеть, ехать на"
+  },
+  "学习": {
+    "pinyin": "xuéxí",
+    "translation": "учить, учиться"
+  },
+  "红": {
+    "pinyin": "hóng",
+    "translation": "красный"
+  },
+  "去": {
+    "pinyin": "qù",
+    "translation": "идти, ехать"
+  },
+  "怎么": {
+    "pinyin": "zěnme",
+    "translation": "Как? Почему?"
+  },
+  "怎么走": {
+    "pinyin": "zěnme zǒu",
+    "translation": "Как добраться…?"
+  },
+  "下雨": {
+    "pinyin": "xiàyǔ",
+    "translation": "идёт дождь"
+  },
+  "回": {
+    "pinyin": "huí",
+    "translation": "возвращаться"
+  },
+  "做": {
+    "pinyin": "zuò",
+    "translation": "делать"
+  },
+  "车": {
+    "pinyin": "chē",
+    "translation": "машина, транспортное средство"
+  },
+  "开": {
+    "pinyin": "kāi",
+    "translation": "открывать, начинаться, управлять транспортным средством"
+  },
+  "椅子": {
+    "pinyin": "yǐzi",
+    "translation": "стул"
+  },
+  "为什么": {
+    "pinyin": "wèishénme",
+    "translation": "Почему?"
+  },
+  "书店": {
+    "pinyin": "shūdiàn",
+    "translation": "книжный магазин"
+  },
+  "先生": {
+    "pinyin": "xiānsheng",
+    "translation": "мистер, господин муж"
+  },
+  "女士": {
+    "pinyin": "nǚshì",
+    "translation": "дама, госпожа"
+  },
+  "上": {
+    "pinyin": "shàng",
+    "translation": "начинать, верхний, над, на"
+  },
+  "医院": {
+    "pinyin": "yīyuàn",
+    "translation": "больница"
+  },
+  "认识": {
+    "pinyin": "rènshi",
+    "translation": "знать, быть знакомым"
+  },
+  "学院": {
+    "pinyin": "xuéyuàn",
+    "translation": "институт"
+  },
+  "教": {
+    "pinyin": "jiāo",
+    "translation": "обучать, преподавать"
+  },
+  "请": {
+    "pinyin": "qǐng",
+    "translation": "приглашать, просить, пожалуйста"
+  },
+  "问": {
+    "pinyin": "wèn",
+    "translation": "спрашивать"
+  },
+  "一下": {
+    "pinyin": "yīxià",
+    "translation": "немного, разок"
+  },
+  "工人": {
+    "pinyin": "gōngrén",
+    "translation": "рабочий"
+  },
+  "字": {
+    "pinyin": "zì",
+    "translation": "иероглиф, символ"
+  },
+  "女": {
+    "pinyin": "nǚ",
+    "translation": "женщина"
+  },
+  "没有": {
+    "pinyin": "méiyǒu",
+    "translation": "не, нет"
+  },
+  "汽车": {
+    "pinyin": "qìchē",
+    "translation": "машина, автомобиль"
+  },
+  "大学": {
+    "pinyin": "dàxué",
+    "translation": "университет"
+  },
+  "大学生": {
+    "pinyin": "dàxuéshēng",
+    "translation": "студент"
+  },
+  "男": {
+    "pinyin": "nán",
+    "translation": "мужчина"
+  },
+  "月": {
+    "pinyin": "yuè",
+    "translation": "месяц"
+  },
+  "号": {
+    "pinyin": "hào",
+    "translation": "число, дата"
+  },
+  "星期": {
+    "pinyin": "xīngqī",
+    "translation": "неделя"
+  },
+  "写": {
+    "pinyin": "xiě",
+    "translation": "писать"
+  },
+  "说话": {
+    "pinyin": "shuōhuà",
+    "translation": "говорить, разговаривать"
+  },
+  "汉字": {
+    "pinyin": "hànzì",
+    "translation": "китайский иероглиф"
+  },
+  "中文": {
+    "pinyin": "Hànyǔ",
+    "translation": "китайский язык"
+  },
+  "难": {
+    "pinyin": "nán",
+    "translation": "трудный"
+  },
+  "看见": {
+    "pinyin": "kànjiàn",
+    "translation": "увидеть"
+  },
+  "下边": {
+    "pinyin": "xiàbiān",
+    "translation": "низ, внизу"
+  },
+  "下": {
+    "pinyin": "xià",
+    "translation": "внизу, под, нижний"
+  },
+  "左边": {
+    "pinyin": "zuǒbiān",
+    "translation": "слева, левая сторона"
+  },
+  "左": {
+    "pinyin": "zuǒ",
+    "translation": "лево, левый"
+  },
+  "本子": {
+    "pinyin": "běnzi",
+    "translation": "тетрадь"
+  },
+  "右边": {
+    "pinyin": "yòubiān",
+    "translation": "справа, правая сторона"
+  },
+  "右": {
+    "pinyin": "yòu",
+    "translation": "право, правый"
+  },
+  "钱包": {
+    "pinyin": "qiánbāo",
+    "translation": "кошелёк"
+  },
+  "听": {
+    "pinyin": "tīng",
+    "translation": "слушать, слышать"
+  },
+  "听见": {
+    "pinyin": "tīngjiàn",
+    "translation": "услышать"
+  },
+  "外边": {
+    "pinyin": "wàibiān",
+    "translation": "снаружи"
+  },
+  "吧": {
+    "pinyin": "bā",
+    "translation": "модальная частица"
+  },
+  "门": {
+    "pinyin": "mén",
+    "translation": "дверь, ворота, вход"
+  },
+  "里": {
+    "pinyin": "lǐ",
+    "translation": "внутри"
+  },
+  "里边": {
+    "pinyin": "lǐbiān",
+    "translation": "внутри"
+  },
+  "能": {
+    "pinyin": "néng",
+    "translation": "мочь, быть в состоянии"
+  },
+  "前边": {
+    "pinyin": "qiánbiān",
+    "translation": "впереди"
+  },
+  "前": {
+    "pinyin": "qián",
+    "translation": "перед, до, передний"
+  },
+  "后边": {
+    "pinyin": "hòu bian",
+    "translation": "позади"
+  },
+  "后": {
+    "pinyin": "hòu",
+    "translation": "задний назад, после потом"
+  },
+  "没事儿": {
+    "pinyin": "méishì",
+    "translation": "ничего не случилось, ничего особенного ничего страшного"
+  },
+  "课本": {
+    "pinyin": "kèběn",
+    "translation": "учебник"
+  },
+  "桌子": {
+    "pinyin": "zhuōzi",
+    "translation": "стол"
+  },
+  "上边": {
+    "pinyin": "shàngbiān",
+    "translation": "верх, наверху"
+  },
+  "电脑": {
+    "pinyin": "diànnǎo",
+    "translation": "компьютер"
+  },
+  "电": {
+    "pinyin": "diàn",
+    "translation": "электричество"
+  },
+  "那儿": {
+    "pinyin": "nàr",
+    "translation": "там, туда"
+  },
+  "这儿": {
+    "pinyin": "zhèr",
+    "translation": "здесь, сейчас"
+  },
+  "电视": {
+    "pinyin": "diànshì",
+    "translation": "телевизор, телевидение"
+  },
+  "家里": {
+    "pinyin": "jiāli",
+    "translation": "дома"
+  },
+  "饭": {
+    "pinyin": "fàn",
+    "translation": "еда"
+  },
+  "中午": {
+    "pinyin": "zhōngwǔ",
+    "translation": "полдень"
+  },
+  "跟": {
+    "pinyin": "gēn",
+    "translation": "с, следовать"
+  },
+  "一起": {
+    "pinyin": "yīqǐ",
+    "translation": "вместе"
+  },
+  "电影院": {
+    "pinyin": "diànyǐngyuàn",
+    "translation": "кинотеатр"
+  },
+  "回家": {
+    "pinyin": "huíjiā",
+    "translation": "возвращаться домой"
+  },
+  "票": {
+    "pinyin": "piào",
+    "translation": "билет"
+  },
+  "北京": {
+    "pinyin": "Běijīng",
+    "translation": "Пекин"
+  },
+  "住": {
+    "pinyin": "zhù",
+    "translation": "жить"
+  },
+  "差": {
+    "pinyin": "chà",
+    "translation": "недоставать, без"
+  },
+  "晚上": {
+    "pinyin": "wǎnshang",
+    "translation": "вечер"
+  },
+  "打球": {
+    "pinyin": "dǎqiú",
+    "translation": "играть в мяч"
+  },
+  "球": {
+    "pinyin": "qiú",
+    "translation": "мяч"
+  },
+  "打": {
+    "pinyin": "dǎ",
+    "translation": "играть"
+  },
+  "天": {
+    "pinyin": "tiān",
+    "translation": "день, небо"
+  },
+  "上班": {
+    "pinyin": "shàngbān",
+    "translation": "ходить на работу, начинать работу"
+  },
+  "下班": {
+    "pinyin": "xià bān",
+    "translation": "закончить работу"
+  },
+  "半": {
+    "pinyin": "bàn",
+    "translation": "половина"
+  },
+  "饭店": {
+    "pinyin": "fàndiàn",
+    "translation": "ресторан, отель"
+  },
+  "饭馆": {
+    "pinyin": "fànguǎn",
+    "translation": "ресторан"
+  }
+}
