@@ -117,30 +117,30 @@ async def reset_progress(message: types.Message):
 @dp.message(Command("stats"))
 async def show_stats(message: types.Message):
       user_id = message.from_user.id
-      all_words = list(WORDS.keys())
-      total_words = len(all_words)
-
       user_data = user_progress.get(user_id, {})
-      learned_words = len(user_data)
 
-      level_counts = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
-      for word_data in user_data.values():
-            level = word_data.get('level', 0)
-            level_counts[level] = level_counts.get(level, 0) + 1
+      if not user_data:
+            await message.answer(
+                  "У тебя пока нет статистики. Начни учить слова с /word!",
+                  reply_markup=get_main_keyboard()
+            )
+            return
+      
+      total_correct = sum(data.get('correct', 0) for data in user_data.values())
+      total_wrong = sum(data.get('wrong', 0) for data in user_data.values())
+      total_missed = sum(data.get('missed', 0) for data in user_data.values())
+      total_attempts = total_correct + total_wrong
+
+      accuracy = round((total_correct / total_attempts) * 100, 1) if total_attempts > 0 else 0
 
       stats_text = (
              f"📊 **Твой прогресс:**\n\n"
-             f"📚 Всего слов: **{total_words}**\n"
-             f"✅ Выучено (хотя бы раз): **{learned_words}**\n"
-             f"📈 Осталось: **{total_words - learned_words}**\n\n"
-             f"**Уровни сложности:**\n"
-             f"🆕 Новые (0): {level_counts.get(0, 0)}\n"
-             f"🌟 Знаю (1): {level_counts.get(1, 0)}\n"
-             f"🌟 Знаю (2): {level_counts.get(2, 0)}\n"
-             f"🌟 Знаю (3): {level_counts.get(3, 0)}\n"
-             f"🔥 Хорошо (4): {level_counts.get(4, 0)}\n"
-             f"💪 Отлично (5): {level_counts.get(5, 0)}\n\n"
-             f"_Чем выше уровень, тем реже слово будет появляться._"
+             f"✅ Правильно: **{total_correct}**\n"
+             f"❌ Неправильно: **{total_wrong}**\n"
+             f"⏩ Пропущено: **{total_missed}**\n"
+             f"🎯 Точность: **{accuracy}%**\n\n"
+             f"📚 Слов в изучении: **{len(user_data)}**\n\n"
+             f"_Статистика с начала работы с ботом (без учёта перезапусков)._"
        )
       await message.answer(stats_text, parse_mode="Markdown", reply_markup=get_main_keyboard())
 
@@ -160,6 +160,8 @@ async def check_answer(message: types.Message):
 
               hint_keywords = ['не знаю', 'забыл', 'забыла', 'хз', 'подскажи', 'подсказка' 'пиньинь', 'помоги', 'не помню']
               if any(keyword in user_answer for keyword in hint_keywords):
+                     if user_id in user_progress and hanzi in user_progress[user_id]:
+                           user_progress[user_id][hanzi]['missed'] =+ 1
                      await message.answer(
                             f"📖 Подсказка для иероглифа **{hanzi}**:\n"
                             f"Пиньинь: `{correct_pinyin}`\n\n"
@@ -174,13 +176,23 @@ async def check_answer(message: types.Message):
                      if user_id not in user_progress:
                            user_progress[user_id] = {}
 
-                     current_level = user_progress[user_id].get(hanzi, {}).get('level', 0)
+                     if hanzi not in user_progress[user_id]:
+                           user_progress[user_id][hanzi] = {
+                                 'level': 0,
+                                 'last_review': 0,
+                                 'correct' : 0,
+                                 'wrong': 0,
+                                 'missed': 0
+                           }
+                     
+                     user_progress[user_id][hanzi]['correct'] += 1
+              
+
+                     current_level = user_progress[user_id][hanzi].get('level', 0)
                      new_level = min(current_level + 1, 5)
 
-                     user_progress[user_id][hanzi] = {
-                           'level': new_level,
-                           'last_review': today_days
-                     }
+                     user_progress[user_id][hanzi]['level'] = new_level
+                     user_progress[user_id][hanzi]['last_review'] = today_days
 
                      await message.answer(
                             f"✅Правильно!\n"
@@ -193,6 +205,19 @@ async def check_answer(message: types.Message):
 
                      del user_active_word[user_id]
               else:
+                     if user_id in user_progress:
+                           if hanzi in user_progress:
+                                 if hanzi in user_progress[user_id]:
+                                       user_progress[user_id][hanzi]['wrong'] += 1
+                                 else:
+                                      user_progress[user_id][hanzi] = {
+                                            'level': 0,
+                                            'last_review': 0,
+                                            'correct': 0,
+                                            'wrong': 1,
+                                            'missed': 0
+                                      }
+
                      await message.answer(
                             f"❌Неправильно.\n"
                             f"Правильный пиньинь: {correct_pinyin}\n"
