@@ -61,6 +61,11 @@ def normalize(text):
        text = text.rstrip(string.punctuation)
        return text
 
+def normalize_russian(text):
+      text = normalize(text)
+      text = text.replace ('ё', 'е')
+      return text
+
 @dp.message(Command("start"))
 async def cmd_start(message: types.Message):
     button = KeyboardButton(text="Новое слово")
@@ -106,12 +111,12 @@ async def reset_progress(message: types.Message):
       else:
             user_progress[user_id] = {}
 
-            if user_id in user_active_word:
-                  del user_active_word[user_id]
+      if user_id in user_active_word:
+              del user_active_word[user_id]
 
-            await message.answer(
-                  "Прогресс сброшен! Все слова снова доступны для изучения.",
-                  reply_markup=get_main_keyboard()
+      await message.answer(
+            "Прогресс сброшен! Все слова снова доступны для изучения.",
+            reply_markup=get_main_keyboard()
             )
 
 @dp.message(Command("stats"))
@@ -154,14 +159,14 @@ async def check_answer(message: types.Message):
               correct_pinyin = correct_data['pinyin'].lower()
               correct_translation_raw = correct_data['translation']
 
-              possible_translations = [normalize(part) for part in correct_translation_raw.split(',')]
+              possible_translations = [normalize_russian(part) for part in correct_translation_raw.split(',')]
 
-              user_answer = normalize(message.text)
+              user_answer = normalize_russian(message.text)
 
-              hint_keywords = ['не знаю', 'забыл', 'забыла', 'хз', 'подскажи', 'подсказка' 'пиньинь', 'помоги', 'не помню']
+              hint_keywords = ['не знаю', 'забыл', 'забыла', 'хз', 'подскажи', 'подсказка', 'пиньинь', 'помоги', 'не помню']
               if any(keyword in user_answer for keyword in hint_keywords):
                      if user_id in user_progress and hanzi in user_progress[user_id]:
-                           user_progress[user_id][hanzi]['missed'] =+ 1
+                           user_progress[user_id][hanzi]['missed'] += 1
                      await message.answer(
                             f"📖 Подсказка для иероглифа **{hanzi}**:\n"
                             f"Пиньинь: `{correct_pinyin}`\n\n"
@@ -170,8 +175,13 @@ async def check_answer(message: types.Message):
                             reply_markup=get_main_keyboard()
                      )
                      return
+              is_correct = False
 
               if user_answer == correct_pinyin or user_answer in possible_translations:
+                     is_correct = True
+              elif any(word in correct_translation_raw for word in user_answer.split()):
+                     is_correct = True
+              if is_correct:
                      today_days = get_current_days()
                      if user_id not in user_progress:
                            user_progress[user_id] = {}
@@ -204,19 +214,21 @@ async def check_answer(message: types.Message):
                      )
 
                      del user_active_word[user_id]
+
               else:
                      if user_id in user_progress:
-                           if hanzi in user_progress:
-                                 if hanzi in user_progress[user_id]:
-                                       user_progress[user_id][hanzi]['wrong'] += 1
-                                 else:
-                                      user_progress[user_id][hanzi] = {
-                                            'level': 0,
-                                            'last_review': 0,
-                                            'correct': 0,
-                                            'wrong': 1,
-                                            'missed': 0
-                                      }
+                           user_progress[user_id] = {}
+
+                     if hanzi in user_progress[user_id]:
+                            user_progress[user_id][hanzi]['wrong'] += 1
+                     else:
+                            user_progress[user_id][hanzi] = {
+                                   'level': 0,
+                                   'last_review': 0,
+                                   'correct': 0,
+                                   'wrong': 1,
+                                   'missed': 0
+                                   }
 
                      await message.answer(
                             f"❌Неправильно.\n"
